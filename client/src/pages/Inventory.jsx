@@ -32,7 +32,7 @@ function Inventory() {
     }).then((result) => {
       if (result.isConfirmed) {
         // Realizar la solicitud DELETE al servidor
-        fetch(`http://localhost:3001/deleteProduct/${productId}`, {
+        fetch(`http://44.202.142.237:3001/deleteProduct/${productId}`, {
           method: 'DELETE',
         })
           .then((response) => response.json())
@@ -64,7 +64,7 @@ function Inventory() {
   };
 
   useEffect(() => {
-    fetch('http://localhost:3001/allProducts')
+    fetch('http://44.202.142.237:3001/allProducts')
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error('Error fetching products:', error));

@@ -63,7 +63,7 @@ function Add() {
     }
 
     // Realizar la solicitud al backend para crear el producto
-    fetch('http://localhost:3001/createProduct/', {
+    fetch('http://44.202.142.237:3001/createProduct/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -64,7 +64,7 @@ function Modify() {
   // Manejar el envío del formulario
   const handleSubmit = () => {
     // Realizar la solicitud al backend para actualizar el producto
-    fetch('http://localhost:3001/updateProduct/' + product.id, {
+    fetch('http://44.202.142.237:3001/updateProduct/' + product.id, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

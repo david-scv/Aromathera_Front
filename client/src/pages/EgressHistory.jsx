@@ -25,7 +25,7 @@ function EgressHistory() {
 
   useEffect(() => {
     // Realizar la solicitud GET al servidor para obtener los egresos
-    fetch('http://localhost:3001/allEgress')
+    fetch('http://44.202.142.237:3001/allEgress')
       .then((response) => response.json())
       .then((data) => {
         console.log('Datos de egresos:', data); // Agregar para depuración
@@ -34,7 +34,7 @@ function EgressHistory() {
       .catch((error) => console.error('Error fetching egresses:', error));
 
     // Realizar la solicitud GET al servidor para obtener todos los clientes
-    fetch('http://localhost:3001/allClient')
+    fetch('http://44.202.142.237:3001/allClient')
       .then((response) => response.json())
       .then((data) => {
         console.log('Datos de clientes:', data); // Agregar para depuración
@@ -47,7 +47,7 @@ function EgressHistory() {
       .catch((error) => console.error('Error fetching clients:', error));
 
     // Realizar la solicitud GET al servidor para obtener todos los productos
-    fetch('http://localhost:3001/allProducts')
+    fetch('http://44.202.142.237:3001/allProducts')
       .then((response) => response.json())
       .then((data) => {
         console.log('Datos de productos:', data); // Agregar para depuración
